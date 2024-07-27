@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:tracksense/screens/homepage.dart';
 
 
@@ -13,8 +14,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       themeMode: ThemeMode.dark,
       theme: ThemeData(
+        textTheme: GoogleFonts.poppinsTextTheme(
+          Theme.of(context).textTheme,
+        ), // Set global font here
         // This is the theme of your application.
-      ),    
+      ),     
       darkTheme: ThemeData(
     // This is the theme of your application when dark mode is enabled.
     // Add your dark theme colors here
